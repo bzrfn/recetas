@@ -24,6 +24,26 @@
         .hide-login {
             display: none;
         }
+
+        /* Estilos para el botón de Login */
+        .login-button {
+            background-color: #ab0a55; 
+            border-radius: 8px; 
+            padding: 5px 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .login-button:hover {
+            background-color: #ff176b; /* Color más claro al pasar el cursor */
+            box-shadow: 0px 0px 10px rgba(255, 23, 107, 0.8);
+            transform: scale(1.05); /* Efecto de agrandamiento */
+        }
+
+        .login-button a {
+            color: white !important;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -42,8 +62,8 @@
                     <li class="nav-item">
                         <a class="nav-link fs-4" href="favoritos.html">Mis Favoritos</a>
                     </li>
-                    <li class="nav-item hide-login" style="background-color: #ff0077; border-radius: 8px; padding: 5px 10px;">
-                        <a class="nav-link fs-4" href="index.html" style="color: white !important; text-decoration: none; font-weight: bold;">Login</a>
+                    <li class="nav-item login-button hide-login">
+                        <a class="nav-link fs-4" href="index.html">Login</a>
                     </li>
                 </ul>
             </div>
